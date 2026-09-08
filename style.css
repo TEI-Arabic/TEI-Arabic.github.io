@@ -85,6 +85,21 @@ nav.site-nav a.active {
   border-bottom-color: var(--accent);
 }
 
+.lang-toggle {
+  font-family: "Noto Kufi Arabic", "Tajawal", Tahoma, Arial, sans-serif !important;
+  font-size: 0.95rem !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.05rem 0.65rem !important;
+  margin-inline-start: 0.25rem;
+}
+
+.lang-toggle:hover {
+  border-color: var(--accent);
+}
+
 main {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -226,4 +241,25 @@ dl.glossary dd {
     gap: 1rem;
     flex-wrap: wrap;
   }
+}
+
+/* Arabic / RTL pages */
+html[dir="rtl"] body {
+  font-family: "Tajawal", "Noto Kufi Arabic", Tahoma, Arial, sans-serif;
+}
+
+html[dir="rtl"] .site-title,
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3.section-heading {
+  font-family: "Noto Kufi Arabic", "Tajawal", Tahoma, Arial, sans-serif;
+}
+
+html[dir="rtl"] nav.site-nav,
+html[dir="rtl"] .curators,
+html[dir="rtl"] .project .meta,
+html[dir="rtl"] .project .link,
+html[dir="rtl"] .resource-list .r-note,
+html[dir="rtl"] .site-footer {
+  font-family: "Tajawal", "Noto Kufi Arabic", Tahoma, Arial, sans-serif;
 }
