@@ -8,7 +8,8 @@ TEI.
 
 - `index.html` — landing page (title, description, curators)
 - `projects.html` — list of member projects
-- `style.css` — shared styles for both pages
+- `resources.html` — reference links (TEI Guidelines, Oxygen, examples) and a short glossary
+- `style.css` — shared styles for all pages
 
 Plain HTML/CSS, no build step. GitHub Pages serves it as-is.
 
@@ -25,3 +26,8 @@ Plain HTML/CSS, no build step. GitHub Pages serves it as-is.
 
 Copy one `<section class="project">…</section>` block in `projects.html` and
 edit the heading, meta line, description, and link.
+
+## Adding a resource
+
+Copy one `<li>…</li>` block in the `<ul class="resource-list">` in
+`resources.html` and edit the title, link, and note.

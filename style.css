@@ -154,6 +154,61 @@ h2 {
   font-size: 0.9rem;
 }
 
+.resource-list {
+  list-style: none;
+  margin: 0 0 2.5rem;
+  padding: 0;
+}
+
+.resource-list li {
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.resource-list li:first-child {
+  border-top: none;
+}
+
+.resource-list .r-title {
+  font-weight: 600;
+}
+
+.resource-list .r-note {
+  display: block;
+  margin-top: 0.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.resource-list code {
+  background: var(--accent-soft);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+h3.section-heading {
+  margin-top: 3rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+dl.glossary dt {
+  font-weight: 600;
+  margin-top: 1.1rem;
+}
+
+dl.glossary dd {
+  margin: 0.25rem 0 0;
+  color: var(--ink-soft);
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.5rem;
