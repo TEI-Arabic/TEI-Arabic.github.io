@@ -44,11 +44,12 @@ a:hover {
 .site-header-inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1.75rem 1.5rem 1.25rem;
+  padding: 2.5rem 1.5rem 1.75rem;
+  text-align: center;
 }
 
 .site-title {
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.6rem;
   font-size: 1.9rem;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -62,6 +63,7 @@ a:hover {
 
 nav.site-nav {
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 0.95rem;
@@ -284,20 +286,6 @@ html[dir="rtl"] code[dir="ltr"] {
 }
 
 /* Landing-page hero (home only) */
-body.home .site-header-inner {
-  text-align: center;
-  padding-top: 2.5rem;
-  padding-bottom: 1.75rem;
-}
-
-body.home .site-title {
-  margin-bottom: 0.6rem;
-}
-
-body.home nav.site-nav {
-  justify-content: center;
-}
-
 .hero-subtitle {
   margin: 0 0 1rem;
   font-size: 1.2rem;
