@@ -203,6 +203,7 @@ h2 {
   font-size: 0.9em;
 }
 
+h2.section-heading,
 h3.section-heading {
   margin-top: 3rem;
   padding-top: 0.5rem;
@@ -262,4 +263,17 @@ html[dir="rtl"] .project .link,
 html[dir="rtl"] .resource-list .r-note,
 html[dir="rtl"] .site-footer {
   font-family: "Tajawal", "Noto Kufi Arabic", Tahoma, Arial, sans-serif;
+}
+
+html[dir="rtl"] nav.site-nav,
+html[dir="rtl"] .project .meta,
+html[dir="rtl"] h2.section-heading,
+html[dir="rtl"] h3.section-heading {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] bdi[dir="ltr"],
+html[dir="rtl"] code[dir="ltr"] {
+  unicode-bidi: isolate;
 }
