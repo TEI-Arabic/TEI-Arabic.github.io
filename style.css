@@ -277,3 +277,129 @@ html[dir="rtl"] bdi[dir="ltr"],
 html[dir="rtl"] code[dir="ltr"] {
   unicode-bidi: isolate;
 }
+
+/* Landing-page hero (home only) */
+body.home .site-header-inner {
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 1.75rem;
+}
+
+body.home .site-title {
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+body.home nav.site-nav {
+  justify-content: center;
+}
+
+.hero-subtitle {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+}
+
+.hero-subtitle[lang="ar"] {
+  font-family: "Noto Kufi Arabic", "Tajawal", Tahoma, Arial, sans-serif;
+}
+
+.hero-subtitle[lang="en"] {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+.ornament {
+  color: var(--accent);
+  letter-spacing: 0.5rem;
+  font-size: 0.85rem;
+  margin: 0 0 0.75rem;
+}
+
+body.home main {
+  padding-top: 2.5rem;
+}
+
+body.home .lede {
+  text-align: center;
+  margin: 0 auto 1rem;
+  max-width: 56ch;
+}
+
+/* What we do */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2.5rem 0 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.feature h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+/* Featured projects (landing page) */
+.featured-projects {
+  margin-bottom: 3rem;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.featured-card {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1.25rem;
+  background: var(--paper-raised);
+}
+
+.featured-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.featured-card p {
+  margin: 0 0 0.75rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.featured-card .link {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 700px) {
+  .features,
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* RTL coverage for the additions above */
+html[dir="rtl"] .feature h3,
+html[dir="rtl"] .feature p,
+html[dir="rtl"] .featured-card .link {
+  font-family: "Tajawal", "Noto Kufi Arabic", Tahoma, Arial, sans-serif;
+}
+
+html[dir="rtl"] .feature h3 {
+  text-transform: none;
+  letter-spacing: 0;
+}

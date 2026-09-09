@@ -10,11 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 
   <header class="site-header">
     <div class="site-header-inner">
-      <p class="site-title"><a href="index.html">Textual Encoding Initiative – Arabic Script Texts</a></p>
+      <h1 class="site-title"><a href="index.html">Textual Encoding Initiative – Arabic Script Texts</a></h1>
+      <p class="hero-subtitle" lang="ar" dir="rtl">مبادرة ترميز النصوص المكتوبة بالخط العربي</p>
       <nav class="site-nav">
         <a href="index.html" class="active">Home</a>
         <a href="projects.html">Projects</a>
@@ -25,10 +26,47 @@
   </header>
 
   <main>
+    <p class="ornament" aria-hidden="true">&#10022;</p>
     <p class="lede">
       Welcome! This is a website for scholars who are interested in marking-up
       Arabic texts for digital publication or for digital databases.
     </p>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Encode</h3>
+        <p>Mark up Arabic-script texts in TEI XML — manuscripts, periodicals, correspondence, epigraphy.</p>
+      </div>
+      <div class="feature">
+        <h3>Publish</h3>
+        <p>Turn markup into searchable digital editions and databases, in Arabic and English.</p>
+      </div>
+      <div class="feature">
+        <h3>Collaborate</h3>
+        <p>Share tools, references, and models across projects and institutions.</p>
+      </div>
+    </section>
+
+    <section class="featured-projects">
+      <h2 class="section-heading">Featured Projects</h2>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <h3>News of Cairo</h3>
+          <p>A TEI XML database of Cairo's urban history from al-Waqāʾiʿ al-Miṣriyyah, 1828–1914.</p>
+          <a class="link" href="https://newsofcairo.org/" target="_blank" rel="noopener">Visit site &#8599;</a>
+        </div>
+        <div class="featured-card">
+          <h3>Jara'id</h3>
+          <p>A searchable database of more than 3,300 Arabic periodicals, 1800–1929.</p>
+          <a class="link" href="https://projectjaraid.github.io/" target="_blank" rel="noopener">Visit site &#8599;</a>
+        </div>
+        <div class="featured-card">
+          <h3>The BADR Project</h3>
+          <p>A TEI-based approach to premodern Islamic texts, led by Adrien de Jarmy.</p>
+          <a class="link" href="https://digitalorientalist.com/2026/02/03/the-badr-project-7th-21st-c-a-tei-based-approach-to-premodern-islamic-texts/" target="_blank" rel="noopener">Read more &#8599;</a>
+        </div>
+      </div>
+    </section>
 
     <p class="curators">
       Curated by Adrien De Jarmy, Adam Mestyan, and Doaa Elalfy.<br>
