@@ -9,7 +9,8 @@ TEI.
 - `index.html` — landing page (title, description, curators)
 - `projects.html` — list of member projects
 - `resources.html` — reference links (TEI Guidelines, Oxygen, examples) and a short glossary
-- `index-ar.html`, `projects-ar.html`, `resources-ar.html` — Arabic (RTL) versions of the three pages above
+- `members.html` — names, affiliations, and email addresses of network members (from the sign-up sheet)
+- `index-ar.html`, `projects-ar.html`, `resources-ar.html`, `members-ar.html` — Arabic (RTL) versions of the four pages above
 - `style.css` — shared styles for all pages, including RTL rules for the Arabic pages
 
 Plain HTML/CSS, no build step. GitHub Pages serves it as-is.
@@ -42,3 +43,10 @@ edit the heading, meta line, description, and link.
 
 Copy one `<li>…</li>` block in the `<ul class="resource-list">` in
 `resources.html` and edit the title, link, and note.
+
+## Adding a member
+
+Copy one `<li>…</li>` block in the `<ul class="resource-list">` in
+`members.html` (and the matching entry in `members-ar.html`) and edit the
+name, affiliation, and `mailto:` link. Leave the email off if the member
+hasn't shared one.
