@@ -8,45 +8,33 @@ TEI.
 
 - `index.html` — landing page (title, description, curators)
 - `projects.html` — list of member projects
-- `resources.html` — reference links (TEI Guidelines, Oxygen, examples) and a short glossary
-- `members.html` — names, affiliations, and email addresses of network members (from the sign-up sheet)
-- `index-ar.html`, `projects-ar.html`, `resources-ar.html`, `members-ar.html` — Arabic (RTL) versions of the four pages above
-- `style.css` — shared styles for all pages, including RTL rules for the Arabic pages
+- `resources.html` — standards, tools, examples and a short glossary
+- `members.html` — names, affiliations, and existing public contact details
+- `index-ar.html`, `projects-ar.html`, `resources-ar.html`, `members-ar.html` — Arabic (RTL) counterparts
+- `style.css` — shared styles, including RTL and keyboard-navigation rules
+- `404.html` — bilingual missing-page response
+- `sitemap.xml`, `robots.txt` — discovery metadata
+- `CONTRIBUTING.md` — proposed contribution guidance for curator review
+- `.github/` — proposed issue/PR templates and public planning/audit notes
 
-Plain HTML/CSS, no build step. GitHub Pages serves it as-is.
+Plain HTML/CSS, no build step. GitHub Pages serves the site.
 
 ## Arabic version
 
-Each English page links to its Arabic counterpart via the "ع" toggle in the
-nav (e.g. `index.html` → `index-ar.html`), and each Arabic page links back
-via an "EN" toggle, following the same `page.html` / `page-ar.html` naming
-and toggle pattern used on adammestyan.com. Arabic pages set
-`<html lang="ar" dir="rtl">` and load Noto Kufi Arabic / Tajawal for
-Arabic-script text. When adding a new English page, create its `-ar.html`
-counterpart and wire up both toggle links.
+Each English page links to its Arabic counterpart and each Arabic page links back. Keep both toggle links and reciprocal hreflang entries aligned. Arabic pages use `<html lang="ar" dir="rtl">`. Both languages request the Arabic fonts needed by the bilingual header. Keep stable project IDs identical across each language pair. Mark the actual language of foreign phrases when known; LTR text is not necessarily English.
 
-## Publishing
+## Editing
 
-1. In this repo on GitHub, go to **Settings → Pages**.
-2. Under **Build and deployment → Source**, choose **Deploy from a branch**.
-3. Set branch to `main`, folder to `/ (root)`, and save.
-4. The site will be live at `https://tei-arabic.github.io/` within a few
-   minutes (this special repo name — `TEI-Arabic.github.io` — makes it the
-   org's root site rather than living under a `/reponame/` path).
+See [CONTRIBUTING.md](CONTRIBUTING.md). Edit both language versions, or explicitly request translation help. For this audit use a working branch and review the diff before proposing a merge. No permission settings are changed by these instructions.
 
-## Adding a project
+To add a project, copy a project section in both project pages and assign matching unique IDs. For a resource, use the appropriate category in both resource pages. For a member, obtain curator confirmation and permission for any new public contact details; do not assume an internal sign-up entry authorizes publication.
 
-Copy one `<section class="project">…</section>` block in `projects.html` and
-edit the heading, meta line, description, and link.
+## Preview and publishing
 
-## Adding a resource
+For a local preview, run `python -m http.server 8000` from the repository folder and open `http://localhost:8000/` in a browser. Check keyboard use, narrow screens and both languages.
 
-Copy one `<li>…</li>` block in the `<ul class="resource-list">` in
-`resources.html` and edit the title, link, and note.
+Existing GitHub Pages configuration is left unchanged. The intended public site is `https://tei-arabic.github.io/`. A working branch does not by itself provide a deployed preview. Review before merging into the publishing branch.
 
-## Adding a member
+## Audit scope
 
-Copy one `<li>…</li>` block in the `<ul class="resource-list">` in
-`members.html` (and the matching entry in `members-ar.html`) and edit the
-name, affiliation, and `mailto:` link. Leave the email off if the member
-hasn't shared one.
+See [.github/planning/AUDIT_2026-09-26.md](.github/planning/AUDIT_2026-09-26.md) for tests and limitations, and [.github/planning/PROPOSALS.md](.github/planning/PROPOSALS.md) for decisions deliberately not applied. These documents contain no confidential meeting materials and do not establish a new forum policy.
