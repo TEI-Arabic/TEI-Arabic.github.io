@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tei-arabic.github.io/sitemap.xml

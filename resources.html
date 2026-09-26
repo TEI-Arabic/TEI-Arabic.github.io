@@ -3,36 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resources – Textual Encoding Initiative, Arabic Script Texts</title>
+  <title>Resources – Text Encoding Initiative, Arabic Script Texts</title>
   <meta name="description" content="Reference materials and tools for encoding Arabic-script texts in TEI.">
+  <link rel="canonical" href="https://tei-arabic.github.io/resources.html">
+  <link rel="alternate" hreflang="en" href="https://tei-arabic.github.io/resources.html">
+  <link rel="alternate" hreflang="ar" href="https://tei-arabic.github.io/resources-ar.html">
+  <link rel="alternate" hreflang="x-default" href="https://tei-arabic.github.io/resources.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Resources – Text Encoding Initiative, Arabic Script Texts">
+  <meta property="og:description" content="Reference materials and tools for encoding Arabic-script texts in TEI.">
+  <meta property="og:url" content="https://tei-arabic.github.io/resources.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&amp;family=Noto+Kufi+Arabic:wght@400;500;600;700&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
     <div class="site-header-inner">
-      <h1 class="site-title"><a href="index.html">A Forum for TEI Arabic Script Projects</a></h1>
+      <p class="site-title"><a href="index.html">A Forum for TEI Arabic Script Projects</a></p>
       <p class="hero-subtitle" lang="ar" dir="rtl">منتدى لمشاريع ترميز النصوص المكتوبة بالخط العربي بمعيار <bdi dir="ltr">TEI</bdi></p>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="resources.html" class="active">Resources</a>
+        <a href="resources.html" class="active" aria-current="page">Resources</a>
         <a href="members.html">Members</a>
-        <a href="resources-ar.html" class="lang-toggle" aria-label="Arabic">ع</a>
+        <a href="resources-ar.html" class="lang-toggle" lang="ar" dir="rtl" hreflang="ar" aria-label="العربية">ع</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <h2 class="page-title">Resources</h2>
+  <main id="main-content" tabindex="-1">
+    <h1 class="page-title">Resources</h1>
     <p class="page-intro">
       Reference materials, tools, and models for scholars encoding
       Arabic-script texts in TEI.
     </p>
 
+    <h2 class="section-heading">Standards</h2>
     <ul class="resource-list">
       <li>
         <a class="r-title" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html" target="_blank" rel="noopener">The TEI Guidelines &#8599;</a>
@@ -42,19 +52,26 @@
         <a class="r-title" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/REF-ELEMENTS.html" target="_blank" rel="noopener">TEI Elements Reference &#8599;</a>
         <span class="r-note">Alphabetical reference for every element in the TEI Guidelines.</span>
       </li>
+    </ul>
+
+    <h2 class="section-heading">Editors and publishing tools</h2>
+    <ul class="resource-list">
       <li>
-        <span class="r-title">Oxygen TEI Plugin</span>
-        <span class="r-note">In Oxygen, go to Preferences &gt; Add-ons, click "Add," and paste
-          <code>https://tei-c.org/release/oxygen/updateSite.oxygen</code> into the URL box.</span>
+        <span class="r-title">TEI framework for Oxygen</span>
+        <span class="r-note">Oxygen includes TEI support. To install a separate TEI framework when needed, open Help &gt; Install new add-ons. Paste <code dir="ltr">https://tei-c.org/release/oxygen/updateSite.oxygen</code> into "Show add-ons from", choose the compatible TEI P5 entry, and follow the prompts. See the <a href="https://www.oxygenxml.com/doc/versions/28.1/ug-editor/topics/installing-and-updating-add-ons.html" target="_blank" rel="noopener">official Oxygen installation instructions</a>. Check the version and project-specific framework settings before changing an existing setup.</span>
       </li>
       <li>
         <a class="r-title" href="https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html" target="_blank" rel="noopener">Oxygen XML Editor &#8599;</a>
-        <span class="r-note">A widely used editor for working in TEI's Author mode.</span>
+        <span class="r-note">An XML editor with an Author mode for working with TEI documents.</span>
       </li>
       <li>
         <a class="r-title" href="https://github.com/OpenArabicPE/tei-boilerplate-arabic-editions" target="_blank" rel="noopener">TEI Boilerplate for Arabic Editions &#8599;</a>
-        <span class="r-note">A version of TEI Boilerplate adapted for Arabic: RTL support, the Amiri typeface, and browser-side rendering of TEI XML with no server required.</span>
+        <span class="r-note">A version of TEI Boilerplate adapted for Arabic: RTL support, the Amiri typeface, and browser-side rendering of TEI XML. Check the repository documentation for hosting and browser requirements.</span>
       </li>
+    </ul>
+
+    <h2 class="section-heading">Examples and tutorials</h2>
+    <ul class="resource-list">
       <li>
         <a class="r-title" href="https://openarabicpe.github.io/" target="_blank" rel="noopener">Till Grallert's Open Arabic Periodical Editions &#8599;</a>
         <span class="r-note">TEI editions of early Arabic periodicals.</span>
@@ -88,12 +105,12 @@
       <dd>Highlight the text, press Ctrl-E (Windows) or Cmd-E (Mac), then choose the element from the menu or type into the search box and hit Enter.</dd>
 
       <dt>Creating an attribute (Oxygen, Author mode)</dt>
-      <dd>Double-click the element and add the attribute's name and value in the menu that appears.</dd>
+      <dd>Place the cursor inside the element and edit its attributes in the Attributes view. Alternatively, press Alt+Enter to open the in-place editor. Double-clicking a named start tag also works when tags are displayed. See <a href="https://www.oxygenxml.com/doc/versions/27.1/ug-author/topics/editing-attributes-author-mode.html" target="_blank" rel="noopener">Oxygen's attribute-editing instructions</a>.</dd>
     </dl>
   </main>
 
   <footer class="site-footer">
-    TEI-Arabic &middot; <a href="https://github.com/TEI-Arabic">github.com/TEI-Arabic</a>
+    <span lang="en" dir="ltr">TEI-Arabic &middot; <a href="https://github.com/TEI-Arabic">github.com/TEI-Arabic</a></span>
   </footer>
 
 </body>
