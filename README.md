@@ -10,7 +10,8 @@ TEI.
 - `projects.html` — list of member projects
 - `resources.html` — reference links (TEI Guidelines, Oxygen, examples) and a short glossary
 - `members.html` — names, affiliations, and email addresses of network members (from the sign-up sheet)
-- `index-ar.html`, `projects-ar.html`, `resources-ar.html`, `members-ar.html` — Arabic (RTL) versions of the four pages above
+- `meetings.html` — schedule of upcoming forum meetings
+- `index-ar.html`, `projects-ar.html`, `resources-ar.html`, `members-ar.html`, `meetings-ar.html` — Arabic (RTL) versions of the five pages above
 - `style.css` — shared styles for all pages, including RTL rules for the Arabic pages
 
 Plain HTML/CSS, no build step. GitHub Pages serves it as-is.
@@ -50,3 +51,9 @@ Copy one `<li>…</li>` block in the `<ul class="resource-list">` in
 `members.html` (and the matching entry in `members-ar.html`) and edit the
 name, affiliation, and `mailto:` link. Leave the email off if the member
 hasn't shared one.
+
+## Adding a meeting
+
+Copy one `<li>…</li>` block in the `<ul class="resource-list">` in
+`meetings.html` (and the matching entry in `meetings-ar.html`) and edit the
+date/time and description. All times are Paris time (CET/CEST).
